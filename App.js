@@ -8,7 +8,7 @@ const App = () => {
 
   const handleTickerSubmit = () => {
     // Assuming your Vmix HTTP URL is stored in a variable called `vmixUrl`
-    const vmixUrl = 'YOUR_VMIX_HTTP_URL';
+    const vmixUrl = 'http://192.168.7.10:8088/API/?Function=OverlayInput4In&input=DoNotEdit';
     axios
       .post(vmixUrl, { tickerText: tickerInput })
       .then(response => {
