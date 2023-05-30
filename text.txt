@@ -1,0 +1,11 @@
+      const response = await axios.post('http://192.168.7.10:8088/API/?Function=OverlayInput4In&input=DoNotEdit', { message: inputText });// http://192.168.7.10:8088/API/?Function=OverlayInput4In&input=DoNotEdit
+
+
+
+
+      In the updated code, I've made the following changes:
+
+Modified the inputContainer style to center align the TextInput and removed the Submit button from it.
+Created a separate buttonContainer style and applied it to both the Submit and Delete buttons to add some space between them.
+Added a button style to customize the appearance of the buttons. Feel free to modify the style properties as per your requirements.
+Remember to replace 'YOUR_VMIX_HTTP_URL', 'YOUR_VMIX_DELETE_URL', 'YOUR_VMIX_PLAY_TICKER_URL', and 'YOUR_VMIX_STOP_TICKER_URL' with the actual URLs provided by Vmix for creating, deleting, playing, and stopping the ticker overlay.
