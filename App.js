@@ -7,7 +7,7 @@ const App = () => {
   const [tickerInput, setTickerInput] = useState('');
 
   const handleTickerSubmit = () => {
-    // Assuming your Vmix HTTP URL is stored in a variable called `vmixUrl`
+    //  Vmix HTTP URL is stored in a variable called `vmixUrl`
     const vmixUrl = 'http://192.168.7.10:8088/API/?Function=OverlayInput4In&input=DoNotEdit';
     axios
       .post(vmixUrl, { tickerText: tickerInput })
@@ -22,7 +22,7 @@ const App = () => {
   };
 
   const handleTickerDelete = () => {
-    // Assuming your Vmix HTTP URL for deleting the ticker is stored in a variable called `vmixDeleteUrl`
+    //  Vmix HTTP URL for deleting the ticker is stored in a variable called `vmixDeleteUrl`
     const vmixDeleteUrl = 'YOUR_VMIX_DELETE_URL';
     axios
       .delete(vmixDeleteUrl)
@@ -37,7 +37,7 @@ const App = () => {
   };
 
   const handlePlayTicker = () => {
-    // Assuming your Vmix HTTP URL for playing the ticker overlay is stored in a variable called `vmixPlayTickerUrl`
+    //  Vmix HTTP URL for playing the ticker overlay is stored in a variable called `vmixPlayTickerUrl`
     const vmixPlayTickerUrl = 'YOUR_VMIX_PLAY_TICKER_URL';
     axios
       .get(vmixPlayTickerUrl)
@@ -52,7 +52,7 @@ const App = () => {
   };
 
   const handleStopTicker = () => {
-    // Assuming your Vmix HTTP URL for stopping the ticker overlay is stored in a variable called `vmixStopTickerUrl`
+    //  Vmix HTTP URL for stopping the ticker overlay is stored in a variable called `vmixStopTickerUrl`
     const vmixStopTickerUrl = 'YOUR_VMIX_STOP_TICKER_URL';
     axios
       .get(vmixStopTickerUrl)
